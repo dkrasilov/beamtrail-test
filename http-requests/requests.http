@@ -1,0 +1,10 @@
+### Book
+POST http://localhost:8080/device/return
+Content-Type: application/json
+
+{
+  "userId": "1231eqwd",
+  "deviceId": "123edw"
+}
+
+###
