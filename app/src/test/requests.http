@@ -1,0 +1,28 @@
+### Get All Users
+GET http://localhost:8080/users
+Content-Type: application/json
+
+### Get All Devices
+GET http://localhost:8080/devices
+Content-Type: application/json
+
+### Book
+POST http://localhost:8080/bookings
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "deviceId": 5
+}
+
+### Return
+DELETE http://localhost:8080/bookings
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "deviceId": 2
+}
+
+### Booking History
+GET http://localhost:8080/bookings
