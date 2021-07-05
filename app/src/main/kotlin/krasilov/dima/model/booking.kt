@@ -10,7 +10,8 @@ object Bookings : IntIdTable() {
     val returnedAt = datetime("returnedAt").nullable()
 
     init {
-        // that's the way to ensure that device cannot be booked twice
+        // fixme we actually need to create partial index to prevent booking same device twice
+        // unqiue deviceId where returnedAt == null      
         uniqueIndex(deviceId, returnedAt)
     }
 }
